@@ -14,7 +14,6 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        TaskRepository.init(this) // Инициализируем TaskRepository
         setContent {
             FarendaTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
